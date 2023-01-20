@@ -24,9 +24,19 @@ const multiply = function (array) {
   return multiply;
 };
 
-const power = function () {};
+const power = function (base, exponent) {
+  let baseToReturn = 1;
+  for (let i = 0; i < exponent; i++) {
+    baseToReturn = base * baseToReturn;
+  }
 
-const factorial = function () {};
+  return baseToReturn;
+};
+
+const factorial = function (number) {
+  if (number === 0) return 1;
+  return number * factorial(number - 1);
+};
 
 // Do not edit below this line
 module.exports = {
