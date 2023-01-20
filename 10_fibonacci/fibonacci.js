@@ -1,7 +1,8 @@
-const fibonacci = function (value) {
-  if (value < 0) return "OOPS";
+let fibonacci = function (value) {
+  let parseValue = parseInt(value);
+  if (!parseValue || parseValue < 0) return "OOPS";
   let fibonacciSequence = [1, 1];
-  for (let i = 2; i < value; i++) {
+  for (let i = 2; i < parseValue; i++) {
     fibonacciSequence.push(fibonacciSequence[i - 1] + fibonacciSequence[i - 2]);
   }
 
