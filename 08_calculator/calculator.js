@@ -15,7 +15,14 @@ const sum = function (array) {
   return sum;
 };
 
-const multiply = function () {};
+const multiply = function (array) {
+  let multiply = 1;
+  array.forEach((item) => {
+    multiply = multiply * item;
+  });
+
+  return multiply;
+};
 
 const power = function () {};
 
