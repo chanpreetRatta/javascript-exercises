@@ -6,7 +6,14 @@ const subtract = function (first_value, second_value) {
   return first_value - second_value;
 };
 
-const sum = function () {};
+const sum = function (array) {
+  let sum = 0;
+  array.forEach((item) => {
+    sum = sum + item;
+  });
+
+  return sum;
+};
 
 const multiply = function () {};
 
